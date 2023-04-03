@@ -20,11 +20,18 @@ html{
 }
 
 /* esconde  a scrollbar no chrome, safari e opera*/
-.app__videos:: -webkit-scrollbar{
+.app__videos::-webkit-scrollbar{
     display:none;
 }
 /*esconde no safari, explore e firefox*/
 .app__videos{
     -ms-overflow-style: none;
     scrollbar-width: none;
+}
+
+@media only screen and(max-width: 440px){
+    .app__videos{
+        width:100%;
+        height: 100vh;
+    }
 }
